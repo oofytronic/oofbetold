@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+p {
+	@apply text-base;
+}
+
+section {
+	@apply p-4;
+}
+
+button {
+	@apply rounded-lg border-2 border-white p-2 hover:bg-white hover:text-gray-800;
+}
