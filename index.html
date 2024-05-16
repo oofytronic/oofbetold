@@ -6,29 +6,31 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 <body class="flex flex-col items-center bg-gray-900 text-white">
-	<nav class="sticky top-0 left-0 flex justify-between gap-2 max-w-4xl bg-gray-800 p-4 rounded-b-lg">
+	<nav class="sticky top-0 left-0 flex justify-between gap-8 max-w-4xl bg-gray-800 p-4 rounded-b-lg">
 		<p>Raouf (Oof) Sattaur</p>
-		<div class="flex gap-4">
+		<div class="flex gap-8">
 			<ul class="flex gap-1">
-				<li>Work</li>
-				<li>Thoughts</li>
-				<li>Resume</li>
-				<li>Contact</li>
+				<li><a href="#latest-work">Work</a></li>
+				<li><a href="#">Thoughts</a></li>
+				<li><a href="#">Resume</a></li>
+				<li><a href="#">Contact</a></li>
 			</ul>
 			<ul class="flex gap-1">
-				<li>Github</li>
-				<li>LinkedIn</li>
+				<li><a href="https://github.com/oofytronic">Github</a></li>
+				<li><a href="#">LinkedIn</a></li>
 			</ul>
 		</div>
 	</nav>
 	<div class="max-w-4xl">
-		<section class="flex flex-col gap-2">
-			<h1 class="font-bold text-5xl">Web Apps, Made to Fly</h1>
-			<p>Hi, my name is Raouf Sattaur. Everyone calls me Oof! I am a web designer and full stack engineer experienced with creating vanilla JavaScript Apps, React/NextJS Apps and working with Node and Bun on the backend. My ultimate goal is to make the web a lighter, more performant and exciting space.</p>
-			<button class="w-fit">View my Latest Work</button>
+		<section class="flex flex-col justify-center items-center gap-2 h-dvh">
+			<div class="flex flex-col gap-2 items-center justify-center w-full h-4/6">
+				<h1 class="font-bold text-5xl">Web Apps, Made to Fly</h1>
+				<p style="width: 70ch;">Hi, my name is Raouf Sattaur. Everyone calls me Oof! I am a web designer and full stack engineer experienced with creating vanilla JavaScript Apps, React/NextJS Apps and working with Node and Bun on the backend. My ultimate goal is to make the web a lighter, more performant and exciting space.</p>
+				<button class="w-fit">View my Latest Work</button>
+			<div>
 		</section>
 
-		<section>
+		<section id="latest-work">
 			<h2 class="text-4xl font-bold">Latest Work</h2>
 			<div class="grid grid-cols-2 gap-2 py-4">
 				<div class="card flex flex-col gap-2 p-4 rounded border">
@@ -74,9 +76,9 @@
 			</div>
 		</section>
 
-		<section>
+		<section class="flex flex-col gap-4">
 			<div class="flex flex-col gap-2">
-				<p>I love exploring new technologies and methodologies. I'm currently playing around with:</p>
+				<p class="font-bold">I love exploring new technologies and methodologies. I'm currently playing around with:</p>
 				<ul class="list-disc list-inside">
 					<li>IPFS (a decentralized file system and network layer)</li>
 					<li>DIDs and WebAuthn</li>
@@ -85,7 +87,7 @@
 			</div>
 
 			<div class="flex flex-col gap-2">
-				<p>While I love experimenting, I've found that my favorite technologies for creating on the web are:</p>
+				<p class="font-bold">While I love experimenting, I've found that my favorite technologies for creating on the web are:</p>
 				<ul class="list-disc list-inside">
 					<li>Ideation: pen and paper</li>
 					<li>LoFi Mockups: Excalidraw</li>
