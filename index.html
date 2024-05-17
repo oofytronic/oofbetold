@@ -11,6 +11,9 @@
   	.hover\\:rotate-2:hover {
       transform: rotate(2deg);
     }
+    .lg\\:w-70ch {
+    	width: 70ch;
+    }
   </style>
 </head>
 <body class="flex flex-col items-center bg-gray-900 text-white transition-colors duration-300">
@@ -34,14 +37,18 @@
 	<div id="circle2" class="fixed right-20 top-[25%] w-32 h-32 bg-gray-700 opacity-40 rounded-full z-negative"></div>
 	<div id="circle3" class="fixed right-[30%] bottom-20 w-24 h-24 bg-gray-700 opacity-40 rounded-full z-negative"></div>
 	
-	<div class="max-w-4xl border border-white m-4 rounded-lg">
-		<section class="flex flex-col justify-center items-center gap-2 h-dvh">
-			<div class="flex flex-col gap-8 items-center w-full h-4/6">
-				<div class="flex flex-col gap-8" style="width: 70ch">
-					<div class="flex flex-col gap-2">
-						<h1 class="font-bold text-5xl">Web Apps, Made to Fly</h1>
-						<p class="font-bold text-3xl opacity-70">Work with an experienced web designer and developer who is passionate about the World Wide Web.</p>
-						<p>Hi, my name is Raouf Sattaur. Everyone calls me <strong>Oof!</strong> I am a web designer and full stack engineer experienced with creating vanilla JavaScript Apps, React/NextJS Apps and working with Node and Bun on the backend. My ultimate goal is to make the web a lighter, more performant and exciting space.</p>
+	<div class="lg:max-w-4xl border border-white m-4 rounded-lg">
+		<section class="flex flex-col justify-center items-center gap-2">
+			<div class="flex flex-col gap-8 items-center w-full pt-12">
+				<div class="flex flex-col gap-8 lg:w-70">
+					<div class="flex flex-col lg:flex-row">
+						<div class="flex-1 flex flex-col gap-2">
+							<h1 class="font-bold text-5xl">Web Apps, Made to Fly</h1>
+							<p class="font-bold text-3xl opacity-70">Work with an experienced web designer and developer who is passionate about the World Wide Web.</p>
+							<p>Hi, my name is Raouf Sattaur. Everyone calls me <strong>Oof!</strong> I am a web designer and full stack engineer experienced with creating vanilla JavaScript Apps, React/NextJS Apps and working with Node and Bun on the backend. My ultimate goal is to make the web a lighter, more performant and exciting space.</p>
+						</div>
+
+						<div class="relative flex-1 rounded-full"><img class="w-full object-cover rounded-full" src="./assets/suit-standing.jpg" alt="profile pic of Oof"></div>
 					</div>
 
 					<a id="latest-button" class="button w-fit" href="#latest-work" data-bg="bg-gradient-to-r from-cyan-500 to-blue-500" data-circle-color="bg-blue-50">View my Latest Work</a>
@@ -81,7 +88,7 @@
 
 		<section id="latest-work">
 			<h2 class="text-4xl font-bold">Latest Work</h2>
-			<div class="grid grid-cols-2 gap-4 py-4">
+			<div class="grid lg:grid-cols-2 grid-wrap gap-4 py-4">
 				<div class="card flex flex-col gap-2 p-4 rounded border transition duration-300 hover:rotate-2" data-bg="bg-slate-950" data-circle-color="bg-slate-800" data-sibling-color="bg-green-600">
 					<h3 class="text-3xl font-bold">BridgBeat App</h3>
 					<div class="flex flex-wrap gap-2">
@@ -96,7 +103,7 @@
 						</div>
 					</div>
 					<p>Playlist Management on Spotify, Made Easy. Bridgebeat allows the user to create playlists, add or remove tracks from playlists, edit track order, playlist details and more all from an intuitive interface whose goal is to showcase relevant Spotify data and allow the user to easily manage that data. The app has ambitious goals to become a central zone for managing a user's musical story across all major platforms.</p>
-					<a class="button w-fit hover:bg-green-600" href="#">Learn More</a>
+					<button id="openModalBtn" class="button w-fit hover:bg-green-600" href="#">Learn More</button>
 				</div>
 				<div class="card flex flex-col gap-2 p-4 rounded border transition duration-300 hover:rotate-2" data-bg="bg-purple-950" data-circle-color="bg-yellow-500" data-sibling-color="bg-yellow-500">
 					<h3 class="text-3xl font-bold">Gondola SSG</h3>
@@ -199,7 +206,7 @@
 						<div class="p-4 w-fit inset-shadow rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #dfcfff 0%, rgb(232, 248, 250) 100%)"><span class="text-gray-900">Web Styling: Vanilla CSS</span></div>
 					</li>
 					<li>
-						<div class="p-4 w-fit inset-shadow rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #ffcffd 0%, rgb(242, 242, 242) 100%)"><span class="text-gray-900">Web Behavior: Vanilla JS</span></div>
+						<div class="p-4 w-fit inset-shadow rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #ffcffd 0%, rgb(242, 242, 242) 100%)"><span class="text-gray-900">Web Functionality: Vanilla JS</span></div>
 					</li>
 					<li>
 						<div class="p-4 w-fit inset-shadow rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #cfffde 0%, rgb(242, 242, 242) 100%)"><span class="text-gray-900">App Creation: PWAs</span></div>
@@ -212,11 +219,13 @@
 					</li>
 				</ul>
 			</div>
+
+			<p class="font-bold">Regardless of the developer environment, as long as I'm building for the web I'm always excited to try new technologies, languages, paradigms and methodologies. My rule of thumb is to stay as close to web-native programming as often as possible and reach out for other tools where necessary. I've built SPAs, MPAs, Static Sites and I've found that using the right tool for the job is what allows you to create efficiently and ultimately satisfy users.</p>
 		</section>
 
 		<section id="thoughts">
 			<h2 class="text-4xl font-bold">Thoughts</h2>
-			<div class="grid grid-cols-2 gap-2 py-4">
+			<div class="grid grid-wrap lg:grid-cols-2 gap-2 py-4">
 				<div class="flex flex-col gap-2 p-4 rounded border">
 					<h3 class="text-3xl font-bold">Title</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -242,7 +251,7 @@
 
 		<section id="contact" class="flex justify-center">
 			<form class="text-blue-500 rounded-lg py-8 w-full">
-				<h2 class="text-white text-2xl font-semibold mb-6">Let's Talk</h2>
+				<h2 class="text-white text-4xl font-semibold mb-6">Let's Talk</h2>
 
 				<div class="mb-4">
 					<label class="block text-blue-500 text-sm font-bold mb-2" for="name">Name</label>
@@ -276,6 +285,32 @@
 			Copyright 2024, Raouf Sattaur, All Rights Reserved
 		</footer>
 	</div>
+
+	<dialog id="myModal" class="fixed inset-0 bg-white p-8 max-w-3xl w-full rounded shadow-lg">
+    <div class="flex justify-end">
+      <button id="closeModalBtn" class="text-gray-500 hover:text-gray-700 text-xl font-bold">&times;</button>
+    </div>
+    <h2 class="text-2xl font-semibold mb-4">BridgeBeat App</h2>
+    <img src="https://via.placeholder.com/800x400" alt="Blog Image" class="w-full mb-4 rounded">
+    <p></p>
+  </dialog>
+
+  <script>
+    document.getElementById('openModalBtn').addEventListener('click', () => {
+      document.getElementById('myModal').showModal();
+    });
+
+    document.getElementById('closeModalBtn').addEventListener('click', () => {
+      document.getElementById('myModal').close();
+    });
+
+    // Close the modal when clicking outside of it
+    document.getElementById('myModal').addEventListener('click', (event) => {
+      if (event.target === document.getElementById('myModal')) {
+        document.getElementById('myModal').close();
+      }
+    });
+  </script>
 
 	<script>
 		const latestButton = document.querySelector('#latest-button');
