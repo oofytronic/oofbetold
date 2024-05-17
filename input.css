@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 p {
 	@apply text-base;
 }
@@ -10,6 +14,6 @@ section {
 	@apply p-4;
 }
 
-button {
+button, .button {
 	@apply rounded-lg border-2 border-white p-2 hover:bg-white hover:text-gray-800;
 }

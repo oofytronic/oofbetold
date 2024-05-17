@@ -4,29 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <style type="text/css">
+  	.z-negative {
+  		z-index: -1;
+  	}
+  </style>
 </head>
 <body class="flex flex-col items-center bg-gray-900 text-white">
-	<nav class="sticky top-0 left-0 flex justify-between gap-8 max-w-4xl bg-gray-800 p-4 rounded-b-lg">
+	<nav class="sticky top-0 left-0 flex justify-between gap-8 max-w-4xl bg-gray-900 border border-white border-t-0 p-4 rounded-b-lg">
 		<p>Raouf (Oof) Sattaur</p>
 		<div class="flex gap-8">
 			<ul class="flex gap-1">
-				<li><a href="#latest-work">Work</a></li>
-				<li><a href="#">Thoughts</a></li>
-				<li><a href="#">Resume</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a class="hover:underline" href="#latest-work">Work</a></li>
+				<li><a class="hover:underline" href="#thoughts">Thoughts</a></li>
+				<li><a class="hover:underline" href="#">Resume</a></li>
+				<li><a class="hover:underline" href="#contact">Contact</a></li>
 			</ul>
-			<ul class="flex gap-1">
-				<li><a href="https://github.com/oofytronic">Github</a></li>
-				<li><a href="#">LinkedIn</a></li>
+			<ul class="flex gap-2">
+				<li><a href="https://github.com/oofytronic" target="_blank" rel="noopener noreferrer" title="Github"><svg style="width: 20px; fill: white;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a></li>
+				<li><a href="https://www.linkedin.com/in/raoufsattaur/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><svg style="width: 20px; fill: white;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a></li>
 			</ul>
 		</div>
 	</nav>
-	<div class="max-w-4xl">
+	
+	<div class="fixed left-10 top-1/2 transform -translate-y-1/2 w-72 h-72 bg-blue-500 opacity-20 hover:opacity-100 rounded-full z-negative"></div>
+	<div class="fixed right-20 top-[25%] w-32 h-32 bg-blue-500 opacity-20 hover:opacity-100 rounded-full z-negative"></div>
+	<div class="fixed right-[30%] bottom-20 w-24 h-24 bg-blue-500 opacity-20 hover:opacity-100 rounded-full z-negative"></div>
+	
+	<div class="max-w-4xl border border-white m-4 rounded-lg">
 		<section class="flex flex-col justify-center items-center gap-2 h-dvh">
-			<div class="flex flex-col gap-2 items-center justify-center w-full h-4/6">
-				<h1 class="font-bold text-5xl">Web Apps, Made to Fly</h1>
-				<p style="width: 70ch;">Hi, my name is Raouf Sattaur. Everyone calls me Oof! I am a web designer and full stack engineer experienced with creating vanilla JavaScript Apps, React/NextJS Apps and working with Node and Bun on the backend. My ultimate goal is to make the web a lighter, more performant and exciting space.</p>
-				<button class="w-fit">View my Latest Work</button>
+			<div class="flex flex-col gap-8 items-center w-full h-4/6">
+				<div class="flex flex-col gap-8" style="width: 70ch">
+					<div class="flex flex-col gap-2">
+						<h1 class="font-bold text-5xl">Web Apps, Made to Fly</h1>
+						<p class="font-bold text-3xl opacity-70">Work with an experienced web developer who cares for the future of the World Wide Web.</p>
+						<p>Hi, my name is Raouf Sattaur. Everyone calls me Oof! I am a web designer and full stack engineer experienced with creating vanilla JavaScript Apps, React/NextJS Apps and working with Node and Bun on the backend. My ultimate goal is to make the web a lighter, more performant and exciting space.</p>
+					</div>
+
+					<a class="button w-fit" href="#latest-work">View my Latest Work</a>
+
+					<ul class="flex flex-col space-y-1 font-medium">
+						<li class="inline-flex items-center space-x-2 tracking-tight">
+							<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%,#ffcfcf 0%,rgb(242,242,242) 100%)"></div>
+							<span>5 years working on websites and web apps</span>
+						</li>
+						<li class="inline-flex items-center space-x-2 tracking-tight">
+							<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #d5cfff 0%, rgb(252, 239, 225) 100%)"></div>
+							<span>Stack research &amp; selection</span>
+						</li>
+						<li class="inline-flex items-center space-x-2 tracking-tight">
+							<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #cfffde 0%, rgb(242, 242, 242) 100%)"></div>
+							<span>Proof of concept project</span>
+						</li>
+						<li class="inline-flex items-center space-x-2 tracking-tight">
+							<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%,#ffcffd 0%,rgb(242,242,242) 100%)"></div>
+							<span>MVP development</span>
+						</li>
+						<li class="inline-flex items-center space-x-2 tracking-tight">
+							<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #dfcfff 0%, rgb(232, 248, 250) 100%)"></div>
+							<span>UI/UX design integration</span>
+						</li>
+						<li class="inline-flex items-center space-x-2 tracking-tight">
+							<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #ffcffd 0%, rgb(242, 242, 242) 100%)"></div>
+							<span>Infrastructure setup</span>
+						</li>
+						<li class="inline-flex items-center space-x-2 tracking-tight">
+							<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #cfffde 0%, rgb(242, 242, 242) 100%)"></div>
+							<span>Maintenance &amp; support</span>
+						</li>
+					</ul>
+				</div>
 			<div>
 		</section>
 
@@ -76,39 +123,128 @@
 			</div>
 		</section>
 
-		<section class="flex flex-col gap-4">
+		<section class="flex flex-col gap-8">
 			<div class="flex flex-col gap-2">
 				<p class="font-bold">I love exploring new technologies and methodologies. I'm currently playing around with:</p>
-				<ul class="list-disc list-inside">
-					<li>IPFS (a decentralized file system and network layer)</li>
-					<li>DIDs and WebAuthn</li>
-					<li>#NoBuild Methodologies</li>
+				<ul class="flex flex-col space-y-1 font-medium">
+					<li class="inline-flex items-center space-x-2 tracking-tight">
+						<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%,#ffcfcf 0%,rgb(242,242,242) 100%)"></div>
+						<span>IPFS (a decentralized file system and network layer)</span>
+					</li>
+					<li class="inline-flex items-center space-x-2 tracking-tight">
+						<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #d5cfff 0%, rgb(252, 239, 225) 100%)"></div>
+						<span>DIDs and WebAuthn</span>
+					</li>
+					<li class="inline-flex items-center space-x-2 tracking-tight">
+						<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #cfffde 0%, rgb(242, 242, 242) 100%)"></div>
+						<span>#NoBuild Methodologies</span>
+					</li>
 				</ul>
 			</div>
 
 			<div class="flex flex-col gap-2">
 				<p class="font-bold">While I love experimenting, I've found that my favorite technologies for creating on the web are:</p>
-				<ul class="list-disc list-inside">
-					<li>Ideation: pen and paper</li>
-					<li>LoFi Mockups: Excalidraw</li>
-					<li>HiFi Mockups: Figma, HTML and CSS</li>
-					<li>Website Structure: SSGs</li>
-					<li>Web Styling: Vanilla CSS</li>
-					<li>Web Behavior: Vanilla JS</li>
-					<li>App Creation: PWAs</li>
-					<li>State Management and Routing: HTMX</li>
-					<li>Backend: Hono and Bun</li>
+				<ul class="flex flex-col space-y-1 font-medium">
+					<li class="inline-flex items-center space-x-2 tracking-tight">
+						<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%,#ffcfcf 0%,rgb(242,242,242) 100%)"></div>
+						<span>Ideation: pen and paper</span>
+					</li>
+					<li class="inline-flex items-center space-x-2 tracking-tight">
+						<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #d5cfff 0%, rgb(252, 239, 225) 100%)"></div>
+						<span>LoFi Mockups: Excalidraw</span>
+					</li>
+					<li class="inline-flex items-center space-x-2 tracking-tight">
+						<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #cfffde 0%, rgb(242, 242, 242) 100%)"></div>
+						<span>HiFi Mockups: Figma, HTML and CSS</span>
+					</li>
+					<li class="inline-flex items-center space-x-2 tracking-tight">
+						<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%,#ffcffd 0%,rgb(242,242,242) 100%)"></div>
+						<span>Website Structure: SSGs</span>
+					</li>
+					<li class="inline-flex items-center space-x-2 tracking-tight">
+						<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #dfcfff 0%, rgb(232, 248, 250) 100%)"></div>
+						<span>Web Styling: Vanilla CSS</span>
+					</li>
+					<li class="inline-flex items-center space-x-2 tracking-tight">
+						<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #ffcffd 0%, rgb(242, 242, 242) 100%)"></div>
+						<span>Web Behavior: Vanilla JS</span>
+					</li>
+					<li class="inline-flex items-center space-x-2 tracking-tight">
+						<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #cfffde 0%, rgb(242, 242, 242) 100%)"></div>
+						<span>App Creation: PWAs</span>
+					</li>
+					<li class="inline-flex items-center space-x-2 tracking-tight">
+						<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%,#ffcfcf 0%,rgb(242,242,242) 100%)"></div>
+						<span>State Management and Routing: HTMX</span>
+					</li>
+					<li class="inline-flex items-center space-x-2 tracking-tight">
+						<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #d5cfff 0%, rgb(252, 239, 225) 100%)"></div>
+						<span>Backend: Hono and Bun</span>
+					</li>
 				</ul>
 			</div>
 		</section>
 
-		<section>
+		<section id="thoughts">
 			<h2 class="text-4xl font-bold">Thoughts</h2>
+			<div class="grid grid-cols-2 gap-2 py-4">
+				<div class="card flex flex-col gap-2 p-4 rounded border">
+					<h3 class="text-3xl font-bold">Title</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a href="#">Link</a>
+				</div>
+				<div class="card flex flex-col gap-2 p-4 rounded border">
+					<h3 class="text-3xl font-bold">Title</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a href="#">Link</a>
+				</div>
+			</div>
 		</section>
 
-		<section>
-			<h2 class="text-4xl font-bold">Let's Talk</h2>
+		<section id="contact" class="flex justify-center">
+			<form class="text-blue-500 rounded-lg p-8 w-full">
+				<h2 class="text-white text-2xl font-semibold mb-6">Let's Talk</h2>
+
+				<div class="mb-4">
+					<label class="block text-blue-500 text-sm font-bold mb-2" for="name">Name</label>
+					<input class="shadow appearance-none border rounded w-full py-2 px-3 text-blue-500 leading-tight focus:outline-none focus:ring-2 focus:ring-white focus:border-white" id="name" type="text" placeholder="Your name">
+				</div>
+
+				<div class="mb-4">
+					<label class="block text-blue-500 text-sm font-bold mb-2" for="organization">Organization (optional)</label>
+					<input class="shadow appearance-none border rounded w-full py-2 px-3 text-blue-500 leading-tight focus:outline-none focus:ring-2 focus:ring-white focus:border-white" id="organization" type="text" placeholder="Your organization">
+				</div>
+
+				<div class="mb-4">
+					<label class="block text-blue-500 text-sm font-bold mb-2" for="email">Email</label>
+					<input class="shadow appearance-none border rounded w-full py-2 px-3 text-blue-500 leading-tight focus:outline-none focus:ring-2 focus:ring-white focus:border-white" id="email" type="email" placeholder="Your email">
+				</div>
+
+				<div class="mb-6">
+					<label class="block text-blue-500 text-sm font-bold mb-2" for="body">Message</label>
+					<textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-blue-500 leading-tight focus:outline-none focus:ring-2 focus:ring-white focus:border-white" id="body" rows="4" placeholder="Your message"></textarea>
+				</div>
+
+				<div class="flex items-center justify-between">
+					<button class="bg-blue-500 hover:bg-white text-white font-bold py-2 px-4 rounded" type="submit">
+					Submit
+					</button>
+				</div>
+			</form>
 		</section>
+		<footer class="flex justify-center p-4">
+			Copyright 2024, Raouf Sattaur, All Rights Reserved
+		</footer>
 	</div>
 </body>
 </html>
