@@ -8,17 +8,20 @@
   	.z-negative {
   		z-index: -1;
   	}
+  	.hover\\:rotate-2:hover {
+      transform: rotate(2deg);
+    }
   </style>
 </head>
-<body class="flex flex-col items-center bg-gray-900 text-white">
-	<nav class="sticky top-0 left-0 flex justify-between gap-8 max-w-4xl bg-gray-900 border border-white border-t-0 p-4 rounded-b-lg">
-		<p>Raouf (Oof) Sattaur</p>
+<body class="flex flex-col items-center bg-gray-900 text-white transition-colors duration-300">
+	<nav class="sticky top-0 left-0 flex flex-wrap justify-between gap-8 max-w-4xl bg-gray-900 border border-white border-t-0 p-4 rounded-b-lg z-50">
+		<a href="#"><p>Raouf (Oof) Sattaur</p></a>
 		<div class="flex gap-8">
-			<ul class="flex gap-1">
-				<li><a class="hover:underline" href="#latest-work">Work</a></li>
-				<li><a class="hover:underline" href="#thoughts">Thoughts</a></li>
-				<li><a class="hover:underline" href="#">Resume</a></li>
-				<li><a class="hover:underline" href="#contact">Contact</a></li>
+			<ul class="flex gap-2">
+				<li><a class="hover:text-blue-500 transition" href="#latest-work">Work</a></li>
+				<li><a class="hover:text-blue-500 transition" href="#thoughts">Thoughts</a></li>
+				<li><a class="hover:text-blue-500 transition" href="#">Resume</a></li>
+				<li><a class="hover:text-blue-500 transition" href="#contact">Contact</a></li>
 			</ul>
 			<ul class="flex gap-2">
 				<li><a href="https://github.com/oofytronic" target="_blank" rel="noopener noreferrer" title="Github"><svg style="width: 20px; fill: white;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a></li>
@@ -27,9 +30,9 @@
 		</div>
 	</nav>
 	
-	<div class="fixed left-10 top-1/2 transform -translate-y-1/2 w-72 h-72 bg-blue-500 opacity-20 hover:opacity-100 rounded-full z-negative"></div>
-	<div class="fixed right-20 top-[25%] w-32 h-32 bg-blue-500 opacity-20 hover:opacity-100 rounded-full z-negative"></div>
-	<div class="fixed right-[30%] bottom-20 w-24 h-24 bg-blue-500 opacity-20 hover:opacity-100 rounded-full z-negative"></div>
+	<div id="circle1" class="fixed left-10 top-1/2 transform -translate-y-1/2 w-72 h-72 bg-gray-700 opacity-40 rounded-full z-negative"></div>
+	<div id="circle2" class="fixed right-20 top-[25%] w-32 h-32 bg-gray-700 opacity-40 rounded-full z-negative"></div>
+	<div id="circle3" class="fixed right-[30%] bottom-20 w-24 h-24 bg-gray-700 opacity-40 rounded-full z-negative"></div>
 	
 	<div class="max-w-4xl border border-white m-4 rounded-lg">
 		<section class="flex flex-col justify-center items-center gap-2 h-dvh">
@@ -37,11 +40,11 @@
 				<div class="flex flex-col gap-8" style="width: 70ch">
 					<div class="flex flex-col gap-2">
 						<h1 class="font-bold text-5xl">Web Apps, Made to Fly</h1>
-						<p class="font-bold text-3xl opacity-70">Work with an experienced web developer who cares for the future of the World Wide Web.</p>
-						<p>Hi, my name is Raouf Sattaur. Everyone calls me Oof! I am a web designer and full stack engineer experienced with creating vanilla JavaScript Apps, React/NextJS Apps and working with Node and Bun on the backend. My ultimate goal is to make the web a lighter, more performant and exciting space.</p>
+						<p class="font-bold text-3xl opacity-70">Work with an experienced web designer and developer who is passionate about the World Wide Web.</p>
+						<p>Hi, my name is Raouf Sattaur. Everyone calls me <strong>Oof!</strong> I am a web designer and full stack engineer experienced with creating vanilla JavaScript Apps, React/NextJS Apps and working with Node and Bun on the backend. My ultimate goal is to make the web a lighter, more performant and exciting space.</p>
 					</div>
 
-					<a class="button w-fit" href="#latest-work">View my Latest Work</a>
+					<a id="latest-button" class="button w-fit" href="#latest-work" data-bg="bg-gradient-to-r from-cyan-500 to-blue-500" data-circle-color="bg-blue-50">View my Latest Work</a>
 
 					<ul class="flex flex-col space-y-1 font-medium">
 						<li class="inline-flex items-center space-x-2 tracking-tight">
@@ -50,70 +53,113 @@
 						</li>
 						<li class="inline-flex items-center space-x-2 tracking-tight">
 							<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #d5cfff 0%, rgb(252, 239, 225) 100%)"></div>
-							<span>Stack research &amp; selection</span>
+							<span>Proficient in HTML, CSS, JavaScript, Tailwind CSS, React, Node.js, and more</span>
 						</li>
 						<li class="inline-flex items-center space-x-2 tracking-tight">
 							<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #cfffde 0%, rgb(242, 242, 242) 100%)"></div>
-							<span>Proof of concept project</span>
+							<span>Skilled in creating responsive, user-friendly web interfaces and complex back-end systems</span>
 						</li>
 						<li class="inline-flex items-center space-x-2 tracking-tight">
 							<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%,#ffcffd 0%,rgb(242,242,242) 100%)"></div>
-							<span>MVP development</span>
+							<span>Adept at finding creative solutions to technical challenges</span>
 						</li>
 						<li class="inline-flex items-center space-x-2 tracking-tight">
 							<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #dfcfff 0%, rgb(232, 248, 250) 100%)"></div>
-							<span>UI/UX design integration</span>
+							<span>Experience with a variety of projects like web applications, eCommerce sites, blogs, developer tooling creation</span>
 						</li>
 						<li class="inline-flex items-center space-x-2 tracking-tight">
 							<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #ffcffd 0%, rgb(242, 242, 242) 100%)"></div>
-							<span>Infrastructure setup</span>
-						</li>
-						<li class="inline-flex items-center space-x-2 tracking-tight">
-							<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #cfffde 0%, rgb(242, 242, 242) 100%)"></div>
-							<span>Maintenance &amp; support</span>
+							<span>Communicative, creative and careful</span>
 						</li>
 					</ul>
+				</div>
+				<div>
+					<img src="">
 				</div>
 			<div>
 		</section>
 
 		<section id="latest-work">
 			<h2 class="text-4xl font-bold">Latest Work</h2>
-			<div class="grid grid-cols-2 gap-2 py-4">
-				<div class="card flex flex-col gap-2 p-4 rounded border" data-bg="bg-slate-950">
-					<h3 class="text-3xl font-bold">BridgBeat</h3>
+			<div class="grid grid-cols-2 gap-4 py-4">
+				<div class="card flex flex-col gap-2 p-4 rounded border transition duration-300 hover:rotate-2" data-bg="bg-slate-950" data-circle-color="bg-slate-800" data-sibling-color="bg-green-600">
+					<h3 class="text-3xl font-bold">BridgBeat App</h3>
+					<div class="flex flex-wrap gap-2">
+						<div class="bg-white text-gray-900 p-2 w-fit rounded" style="background:radial-gradient(50% 50% at 29.7% 23%,#ffcfcf 0%,rgb(242,242,242) 100%)">
+							<p class="text-sm">React</p>
+						</div>
+						<div class="bg-white text-gray-900 p-2 w-fit rounded" style="background:radial-gradient(50% 50% at 29.7% 23%, #d5cfff 0%, rgb(252, 239, 225) 100%)">
+							<p class="text-sm">Tailwind CSS</p>
+						</div>
+						<div class="bg-white text-gray-900 p-2 w-fit rounded" style="background:radial-gradient(50% 50% at 29.7% 23%, #cfffde 0%, rgb(242, 242, 242) 100%)">
+							<p class="text-sm">Spotify API</p>
+						</div>
+					</div>
 					<p>Playlist Management on Spotify, Made Easy. Bridgebeat allows the user to create playlists, add or remove tracks from playlists, edit track order, playlist details and more all from an intuitive interface whose goal is to showcase relevant Spotify data and allow the user to easily manage that data. The app has ambitious goals to become a central zone for managing a user's musical story across all major platforms.</p>
-					<a href="#">Learn More</a>
+					<a class="button w-fit hover:bg-green-600" href="#">Learn More</a>
 				</div>
-				<div class="card flex flex-col gap-2 p-4 rounded border" data-bg="">
-					<h3 class="text-3xl font-bold">Title</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<a href="#">Link</a>
+				<div class="card flex flex-col gap-2 p-4 rounded border transition duration-300 hover:rotate-2" data-bg="bg-purple-950" data-circle-color="bg-yellow-500" data-sibling-color="bg-yellow-500">
+					<h3 class="text-3xl font-bold">Gondola SSG</h3>
+					<div class="flex flex-wrap gap-2">
+						<div class="bg-white text-gray-900 p-2 w-fit rounded" style="background:radial-gradient(50% 50% at 29.7% 23%,#ffcfcf 0%,rgb(242,242,242) 100%)">
+							<p class="text-sm">Vanilla JS</p>
+						</div>
+						<div class="bg-white text-gray-900 p-2 w-fit rounded" style="background:radial-gradient(50% 50% at 29.7% 23%, #d5cfff 0%, rgb(252, 239, 225) 100%)">
+							<p class="text-sm">Bun</p>
+						</div>
+						<div class="bg-white text-gray-900 p-2 w-fit rounded" style="background:radial-gradient(50% 50% at 29.7% 23%, #cfffde 0%, rgb(242, 242, 242) 100%)">
+							<p class="text-sm">Markdown, YAML, JSON, JS templating</p>
+						</div>
+					</div>
+					<p>Gondola is a simple Static Site Generator and Progressive Web App (PWA) builder focused on a streamlined developer experience. Gondola aims to be an antithesis to "modern" website building where bloated frameworks seize every aspect of the web platform without reason and static site generators try to accomodate every single use case or workflow. Most websites today are over-engineered, heavy and hard to maintain. Gondola aims to help developers have fun creating websites again.</p>
+					<a class="button w-fit hover:bg-yellow-500" href="https://github.com/oofytronic/gondola" target="_blank" rel="noopener noreferrer">Github</a>
 				</div>
-				<div class="card flex flex-col gap-2 p-4 rounded border" data-bg="">
-					<h3 class="text-3xl font-bold">Title</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<a href="#">Link</a>
+				<div class="card flex flex-col gap-2 p-4 rounded border transition duration-300 hover:rotate-2" data-bg="bg-blue-700" data-circle-color="bg-orange-200" data-sibling-color="bg-sky-500">
+					<h3 class="text-3xl font-bold">Artist Retreats Workshop Platform</h3>
+					<div class="flex flex-wrap gap-2">
+						<div class="bg-white text-gray-900 p-2 w-fit rounded" style="background:radial-gradient(50% 50% at 29.7% 23%,#ffcfcf 0%,rgb(242,242,242) 100%)">
+							<p class="text-sm">Vanilla JS</p>
+						</div>
+						<div class="bg-white text-gray-900 p-2 w-fit rounded" style="background:radial-gradient(50% 50% at 29.7% 23%, #d5cfff 0%, rgb(252, 239, 225) 100%)">
+							<p class="text-sm">Custom Design System and CSS utilities library</p>
+						</div>
+						<div class="bg-white text-gray-900 p-2 w-fit rounded" style="background:radial-gradient(50% 50% at 29.7% 23%, #cfffde 0%, rgb(242, 242, 242) 100%)">
+							<p class="text-sm">Custom Checkout Flow</p>
+						</div>
+						<div class="bg-white text-gray-900 p-2 w-fit rounded" style="background:radial-gradient(50% 50% at 29.7% 23%,#ffcfcf 0%,rgb(242,242,242) 100%)">
+							<p class="text-sm">Stripe</p>
+						</div>
+						<div class="bg-white text-gray-900 p-2 w-fit rounded" style="background:radial-gradient(50% 50% at 29.7% 23%, #d5cfff 0%, rgb(252, 239, 225) 100%)">
+							<p class="text-sm">Gondola SSG</p>
+						</div>
+						<div class="bg-white text-gray-900 p-2 w-fit rounded" style="background:radial-gradient(50% 50% at 29.7% 23%, #cfffde 0%, rgb(242, 242, 242) 100%)">
+							<p class="text-sm">DecapCMS</p>
+						</div>
+					</div>
+					<p>Artist Retreats is an artist workshop booking platform that allows users to book workshops in Sicily, Italy. The platform has a custom booking experience, connects with the Stripe API to offer a custom checkout, is tailored to the user's decisions during checkout and is packed with small, tasteful interactions. It is a website with a clear design system and comes with a custom CMS tailored to the way the team at Artist Retreats thinks about data. UPDATE: the CEO has since abandoned the project, but I have kept a copy of it for display purposes only.</p>
+					<a class="button w-fit hover:bg-sky-500" href="https://ar-og.netlify.app" target="_blank" rel="noopener noreferrer">Visit</a>
 				</div>
-				<div class="card flex flex-col gap-2 p-4 rounded border" data-bg="">
-					<h3 class="text-3xl font-bold">Title</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<a href="#">Link</a>
+				<div class="card flex flex-col gap-2 p-4 rounded border transition duration-300 hover:rotate-2" data-bg="bg-emerald-950" data-circle-color="bg-stone-50" data-sibling-color="bg-yellow-600">
+					<h3 class="text-3xl font-bold">3Peak Coaching & Solutions Website</h3>
+					<div class="flex flex-wrap gap-2">
+						<div class="bg-white text-gray-900 p-2 w-fit rounded" style="background:radial-gradient(50% 50% at 29.7% 23%,#ffcfcf 0%,rgb(242,242,242) 100%)">
+							<p class="text-sm">Vanilla JS</p>
+						</div>
+						<div class="bg-white text-gray-900 p-2 w-fit rounded" style="background:radial-gradient(50% 50% at 29.7% 23%, #d5cfff 0%, rgb(252, 239, 225) 100%)">
+							<p class="text-sm">Custom Design System and CSS utilities library</p>
+						</div>
+						<div class="bg-white text-gray-900 p-2 w-fit rounded" style="background:radial-gradient(50% 50% at 29.7% 23%, #cfffde 0%, rgb(242, 242, 242) 100%)">
+							<p class="text-sm">Gondola SSG</p>
+						</div>
+						<div class="bg-white text-gray-900 p-2 w-fit rounded" style="background:radial-gradient(50% 50% at 29.7% 23%,#ffcfcf 0%,rgb(242,242,242) 100%)">
+							<p class="text-sm">DecapCMS</p>
+						</div>
+						<div class="bg-white text-gray-900 p-2 w-fit rounded" style="background:radial-gradient(50% 50% at 29.7% 23%, #d5cfff 0%, rgb(252, 239, 225) 100%)">
+							<p class="text-sm">Podcast Automation</p>
+						</div>
+					</div>
+					<p>3Peak Coaching & Solutions is a company offering expert crisis management services to businesses. The team needed a website that was able to function as a display for their services, a blog to showcase their expertise, a podcast platform that allows users to listen to their podcasts and find the podcasts on various channels, and an event recollection feed. The website uses custom integrations to track when the team uploads a new podcast to their podcast platform and then triggers a new build using the JSON data from the podcast platform to display the new podcast on the site. The website also comes fitted with a custom CMS.</p>
+					<a class="button w-fit hover:bg-yellow-600" href="https://3peakcoaching.com" target="_blank" rel="noopener noreferrer">Visit</a>
 				</div>
 			</div>
 		</section>
@@ -121,60 +167,48 @@
 		<section class="flex flex-col gap-8">
 			<div class="flex flex-col gap-2">
 				<p class="font-bold">I love exploring new technologies and methodologies. I'm currently playing around with:</p>
-				<ul class="flex flex-col space-y-1 font-medium">
-					<li class="inline-flex items-center space-x-2 tracking-tight">
-						<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%,#ffcfcf 0%,rgb(242,242,242) 100%)"></div>
-						<span>IPFS (a decentralized file system and network layer)</span>
+				<ul class="flex flex-wrap gap-2 font-medium">
+					<li>
+						<div class="p-4 w-fit inset-shadow rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%,#ffcfcf 0%,rgb(242,242,242) 100%)"><span class="text-gray-900">IPFS (a decentralized file system and network layer)</span></div>
 					</li>
-					<li class="inline-flex items-center space-x-2 tracking-tight">
-						<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #d5cfff 0%, rgb(252, 239, 225) 100%)"></div>
-						<span>DIDs and WebAuthn</span>
+					<li>
+						<div class="p-4 w-fit inset-shadow rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #d5cfff 0%, rgb(252, 239, 225) 100%)"><span class="text-gray-900">DIDs and WebAuthn</span></div>
 					</li>
-					<li class="inline-flex items-center space-x-2 tracking-tight">
-						<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #cfffde 0%, rgb(242, 242, 242) 100%)"></div>
-						<span>#NoBuild Methodologies</span>
+					<li>
+						<div class="p-4 w-fit inset-shadow rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #cfffde 0%, rgb(242, 242, 242) 100%)"><span class="text-gray-900">#NoBuild Methodologies</span></div>
 					</li>
 				</ul>
 			</div>
 
 			<div class="flex flex-col gap-2">
-				<p class="font-bold">While I love experimenting, I've found that my favorite technologies for creating on the web are:</p>
-				<ul class="flex flex-col space-y-1 font-medium">
-					<li class="inline-flex items-center space-x-2 tracking-tight">
-						<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%,#ffcfcf 0%,rgb(242,242,242) 100%)"></div>
-						<span>Ideation: pen and paper</span>
+				<p class="font-bold">While I love experimenting, I've found that my favorite technologies for building on the web are:</p>
+				<ul class="flex flex-wrap gap-2 font-medium">
+					<li>
+						<div class="p-4 w-fit inset-shadow rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%,#ffcfcf 0%,rgb(242,242,242) 100%)"><span class="text-gray-900">Ideation: pen and paper</span></div>
 					</li>
-					<li class="inline-flex items-center space-x-2 tracking-tight">
-						<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #d5cfff 0%, rgb(252, 239, 225) 100%)"></div>
-						<span>LoFi Mockups: Excalidraw</span>
+					<li>
+						<div class="p-4 w-fit inset-shadow rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #d5cfff 0%, rgb(252, 239, 225) 100%)"><span class="text-gray-900">LoFi Mockups: Excalidraw</span></div>
 					</li>
-					<li class="inline-flex items-center space-x-2 tracking-tight">
-						<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #cfffde 0%, rgb(242, 242, 242) 100%)"></div>
-						<span>HiFi Mockups: Figma, HTML and CSS</span>
+					<li>
+						<div class="p-4 w-fit inset-shadow rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #cfffde 0%, rgb(242, 242, 242) 100%)"><span class="text-gray-900">HiFi Mockups: Figma, HTML and CSS</span></div>
 					</li>
-					<li class="inline-flex items-center space-x-2 tracking-tight">
-						<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%,#ffcffd 0%,rgb(242,242,242) 100%)"></div>
-						<span>Website Structure: SSGs</span>
+					<li>
+						<div class="p-4 w-fit inset-shadow rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%,#ffcffd 0%,rgb(242,242,242) 100%)"><span class="text-gray-900">Website Structure: SSGs</span></div>
 					</li>
-					<li class="inline-flex items-center space-x-2 tracking-tight">
-						<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #dfcfff 0%, rgb(232, 248, 250) 100%)"></div>
-						<span>Web Styling: Vanilla CSS</span>
+					<li>
+						<div class="p-4 w-fit inset-shadow rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #dfcfff 0%, rgb(232, 248, 250) 100%)"><span class="text-gray-900">Web Styling: Vanilla CSS</span></div>
 					</li>
-					<li class="inline-flex items-center space-x-2 tracking-tight">
-						<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #ffcffd 0%, rgb(242, 242, 242) 100%)"></div>
-						<span>Web Behavior: Vanilla JS</span>
+					<li>
+						<div class="p-4 w-fit inset-shadow rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #ffcffd 0%, rgb(242, 242, 242) 100%)"><span class="text-gray-900">Web Behavior: Vanilla JS</span></div>
 					</li>
-					<li class="inline-flex items-center space-x-2 tracking-tight">
-						<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #cfffde 0%, rgb(242, 242, 242) 100%)"></div>
-						<span>App Creation: PWAs</span>
+					<li>
+						<div class="p-4 w-fit inset-shadow rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #cfffde 0%, rgb(242, 242, 242) 100%)"><span class="text-gray-900">App Creation: PWAs</span></div>
 					</li>
-					<li class="inline-flex items-center space-x-2 tracking-tight">
-						<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%,#ffcfcf 0%,rgb(242,242,242) 100%)"></div>
-						<span>State Management and Routing: HTMX</span>
+					<li>
+						<div class="p-4 w-fit inset-shadow rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%,#ffcfcf 0%,rgb(242,242,242) 100%)"><span class="text-gray-900">State Management and Routing: HTMX</span></div>
 					</li>
-					<li class="inline-flex items-center space-x-2 tracking-tight">
-						<div class="inset-shadow h-4 w-4 rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #d5cfff 0%, rgb(252, 239, 225) 100%)"></div>
-						<span>Backend: Hono and Bun</span>
+					<li>
+						<div class="p-4 w-fit inset-shadow rounded-full" style="background:radial-gradient(50% 50% at 29.7% 23%, #d5cfff 0%, rgb(252, 239, 225) 100%)"><span class="text-gray-900">Backend: Hono and Bun</span></div>
 					</li>
 				</ul>
 			</div>
@@ -183,7 +217,7 @@
 		<section id="thoughts">
 			<h2 class="text-4xl font-bold">Thoughts</h2>
 			<div class="grid grid-cols-2 gap-2 py-4">
-				<div class="card flex flex-col gap-2 p-4 rounded border">
+				<div class="flex flex-col gap-2 p-4 rounded border">
 					<h3 class="text-3xl font-bold">Title</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -191,9 +225,9 @@
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<a href="#">Link</a>
+					<a class="button w-fit transition" href="#">Read More</a>
 				</div>
-				<div class="card flex flex-col gap-2 p-4 rounded border">
+				<div class="flex flex-col gap-2 p-4 rounded border">
 					<h3 class="text-3xl font-bold">Title</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -201,13 +235,13 @@
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<a href="#">Link</a>
+					<a class="button w-fit transition" href="#">Read More</a>
 				</div>
 			</div>
 		</section>
 
 		<section id="contact" class="flex justify-center">
-			<form class="text-blue-500 rounded-lg p-8 w-full">
+			<form class="text-blue-500 rounded-lg py-8 w-full">
 				<h2 class="text-white text-2xl font-semibold mb-6">Let's Talk</h2>
 
 				<div class="mb-4">
@@ -231,53 +265,73 @@
 				</div>
 
 				<div class="flex items-center justify-between">
-					<button class="bg-blue-500 hover:bg-white text-white font-bold py-2 px-4 rounded" type="submit">
+					<button class="bg-blue-500 hover:bg-white text-white font-bold py-2 px-4 rounded transition" type="submit">
 					Submit
 					</button>
 				</div>
 			</form>
 		</section>
+
 		<footer class="flex justify-center p-4">
 			Copyright 2024, Raouf Sattaur, All Rights Reserved
 		</footer>
 	</div>
 
-
-
-
-
-
-
 	<script>
-    document.querySelectorAll('.card').forEach(card => {
-      card.addEventListener('mouseenter', () => {
-        const bgColor = card.getAttribute('data-bg');
-        // const circleColor = card.getAttribute('data-circle-color');
-        // const siblingColor = card.getAttribute('data-sibling-color');
-        
-        document.body.className = `flex flex-col items-center text-white ${bgColor}`;
-        // document.getElementById('circle1').className = `fixed left-0 top-1/2 transform -translate-y-1/2 w-32 h-32 ${circleColor} rounded-full z-negative`;
-        // document.getElementById('circle2').className = `fixed right-20 top-[25%] w-32 h-32 ${circleColor} rounded-full z-negative`;
-        // document.getElementById('circle3').className = `fixed right-[30%] bottom-20 w-24 h-24 ${circleColor} rounded-full z-negative`;
-        
-        // document.querySelectorAll('.card').forEach(sibling => {
-        //   if (sibling !== card) {
-        //     sibling.className = `card p-4 shadow-md rounded-lg ${siblingColor}`;
-        //   }
-        // });
-      });
+		const latestButton = document.querySelector('#latest-button');
+		latestButton.addEventListener('mouseenter', () => {
+			const bgColor = latestButton.getAttribute('data-bg').split(' ');
+	        const circleColor = latestButton.getAttribute('data-circle-color');
+	        document.body.classList.add(...bgColor);
 
-      card.addEventListener('mouseleave', () => {
-        document.body.className = `flex flex-col items-center text-white bg-gray-900`;
-        // document.getElementById('circle1').className = 'fixed left-0 top-1/2 transform -translate-y-1/2 w-32 h-32 bg-blue-500 rounded-full z-negative';
-        // document.getElementById('circle2').className = 'fixed right-20 top-[25%] w-32 h-32 bg-blue-500 rounded-full z-negative';
-        // document.getElementById('circle3').className = 'fixed right-[30%] bottom-20 w-24 h-24 bg-blue-400 rounded-full z-negative';
-        
-        // document.querySelectorAll('.card').forEach(sibling => {
-        //   sibling.className = 'card p-4 bg-white shadow-md rounded-lg';
-        // });
-      });
-    });
-  </script>
+	        document.getElementById('circle1').classList.add(circleColor);
+	        document.getElementById('circle2').classList.add(circleColor);
+	        document.getElementById('circle3').classList.add(circleColor);
+	      });
+
+	      latestButton.addEventListener('mouseleave', () => {
+	      	const bgColor = latestButton.getAttribute('data-bg').split(' ');
+	        const circleColor = latestButton.getAttribute('data-circle-color');
+	        document.body.classList.remove(...bgColor);
+
+	        document.getElementById('circle1').classList.remove(circleColor);
+	        document.getElementById('circle2').classList.remove(circleColor);
+	        document.getElementById('circle3').classList.remove(circleColor);
+	      });
+
+	    document.querySelectorAll('.card').forEach(card => {
+	    	const bgColor = card.getAttribute('data-bg');
+	        const circleColor = card.getAttribute('data-circle-color');
+	        const siblingColor = card.getAttribute('data-sibling-color');
+
+	      card.addEventListener('mouseenter', () => {
+	        document.body.classList.add(bgColor);
+	        card.classList.add(bgColor);
+
+	        document.getElementById('circle1').classList.add(circleColor);
+	        document.getElementById('circle2').classList.add(circleColor);
+	        document.getElementById('circle3').classList.add(circleColor);
+
+	        document.querySelectorAll('.card').forEach(sibling => {
+	          if (sibling !== card) {
+	            sibling.classList.add(siblingColor);
+	          }
+	        });
+	      });
+
+	      card.addEventListener('mouseleave', () => {
+	        document.body.classList.remove(bgColor);
+	        card.classList.remove(bgColor);
+
+	        document.getElementById('circle1').classList.remove(circleColor);
+	        document.getElementById('circle2').classList.remove(circleColor);
+	        document.getElementById('circle3').classList.remove(circleColor);
+
+	        document.querySelectorAll('.card').forEach(sibling => {
+	          sibling.classList.remove(siblingColor);
+	        });
+	      });
+	    });
+	</script>
 </body>
 </html>
