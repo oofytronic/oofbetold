@@ -80,7 +80,12 @@
 		<section id="latest-work">
 			<h2 class="text-4xl font-bold">Latest Work</h2>
 			<div class="grid grid-cols-2 gap-2 py-4">
-				<div class="card flex flex-col gap-2 p-4 rounded border">
+				<div class="card flex flex-col gap-2 p-4 rounded border" data-bg="bg-slate-950">
+					<h3 class="text-3xl font-bold">BridgBeat</h3>
+					<p>Playlist Management on Spotify, Made Easy. Bridgebeat allows the user to create playlists, add or remove tracks from playlists, edit track order, playlist details and more all from an intuitive interface whose goal is to showcase relevant Spotify data and allow the user to easily manage that data. The app has ambitious goals to become a central zone for managing a user's musical story across all major platforms.</p>
+					<a href="#">Learn More</a>
+				</div>
+				<div class="card flex flex-col gap-2 p-4 rounded border" data-bg="">
 					<h3 class="text-3xl font-bold">Title</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -90,7 +95,7 @@
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					<a href="#">Link</a>
 				</div>
-				<div class="card flex flex-col gap-2 p-4 rounded border">
+				<div class="card flex flex-col gap-2 p-4 rounded border" data-bg="">
 					<h3 class="text-3xl font-bold">Title</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -100,17 +105,7 @@
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					<a href="#">Link</a>
 				</div>
-				<div class="card flex flex-col gap-2 p-4 rounded border">
-					<h3 class="text-3xl font-bold">Title</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<a href="#">Link</a>
-				</div>
-				<div class="card flex flex-col gap-2 p-4 rounded border">
+				<div class="card flex flex-col gap-2 p-4 rounded border" data-bg="">
 					<h3 class="text-3xl font-bold">Title</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -246,5 +241,43 @@
 			Copyright 2024, Raouf Sattaur, All Rights Reserved
 		</footer>
 	</div>
+
+
+
+
+
+
+
+	<script>
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        const bgColor = card.getAttribute('data-bg');
+        // const circleColor = card.getAttribute('data-circle-color');
+        // const siblingColor = card.getAttribute('data-sibling-color');
+        
+        document.body.className = `flex flex-col items-center text-white ${bgColor}`;
+        // document.getElementById('circle1').className = `fixed left-0 top-1/2 transform -translate-y-1/2 w-32 h-32 ${circleColor} rounded-full z-negative`;
+        // document.getElementById('circle2').className = `fixed right-20 top-[25%] w-32 h-32 ${circleColor} rounded-full z-negative`;
+        // document.getElementById('circle3').className = `fixed right-[30%] bottom-20 w-24 h-24 ${circleColor} rounded-full z-negative`;
+        
+        // document.querySelectorAll('.card').forEach(sibling => {
+        //   if (sibling !== card) {
+        //     sibling.className = `card p-4 shadow-md rounded-lg ${siblingColor}`;
+        //   }
+        // });
+      });
+
+      card.addEventListener('mouseleave', () => {
+        document.body.className = `flex flex-col items-center text-white bg-gray-900`;
+        // document.getElementById('circle1').className = 'fixed left-0 top-1/2 transform -translate-y-1/2 w-32 h-32 bg-blue-500 rounded-full z-negative';
+        // document.getElementById('circle2').className = 'fixed right-20 top-[25%] w-32 h-32 bg-blue-500 rounded-full z-negative';
+        // document.getElementById('circle3').className = 'fixed right-[30%] bottom-20 w-24 h-24 bg-blue-400 rounded-full z-negative';
+        
+        // document.querySelectorAll('.card').forEach(sibling => {
+        //   sibling.className = 'card p-4 bg-white shadow-md rounded-lg';
+        // });
+      });
+    });
+  </script>
 </body>
 </html>
