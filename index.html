@@ -19,6 +19,9 @@
     .lg\\:w-70ch {
     	width: 70ch;
     }
+    .bg-ar:hover {
+    	background: #e3ba96;
+    }
   </style>
 </head>
 <body class="flex flex-col items-center bg-gray-900 text-white transition-colors duration-300">
@@ -31,7 +34,7 @@
 			<ul class="flex gap-2">
 				<li><a class="hover:text-blue-500 transition" href="/#latest-work">Work</a></li>
 				<li><a class="hover:text-blue-500 transition" href="/#thoughts">Thoughts</a></li>
-				<li><a class="hover:text-blue-500 transition" href="#">Resume</a></li>
+				<li><a class="hover:text-blue-500 transition" href="#">Résumé</a></li>
 				<li><a class="hover:text-blue-500 transition" href="/#contact">Contact</a></li>
 			</ul>
 			<ul class="flex gap-2">
@@ -49,7 +52,7 @@
 		<section class="flex flex-col justify-center items-center gap-2">
 			<div class="flex flex-col gap-8 items-center w-full pt-12">
 				<div class="flex flex-col gap-8 lg:w-70">
-					<div class="flex flex-col lg:flex-row">
+					<div class="flex flex-col lg:flex-row gap-2">
 						<div class="flex-1 flex flex-col gap-2">
 							<h1 class="font-bold text-5xl">Web Apps, Made to Fly</h1>
 							<p class="font-bold text-3xl opacity-70">Work with an experienced Full-Stack Engineer and Web Designer who is passionate about the World Wide Web.</p>
@@ -101,7 +104,7 @@
 		<section id="latest-work">
 			<h2 class="text-4xl font-bold">Latest Work</h2>
 			<div class="grid lg:grid-cols-2 grid-wrap gap-4 py-4">
-				<div class="card flex flex-col gap-2 p-4 rounded border transition duration-300 hover:rotate-2" data-bg="bg-slate-950" data-circle-color="bg-slate-800" data-sibling-color="bg-green-600">
+				<div class="card flex flex-col gap-2 p-4 rounded border transition duration-300 hover:rotate-2 hover:bg-slate-800" data-bg="bg-slate-950" data-circle-color="bg-slate-800" data-sibling-color="bg-green-600">
 					<h3 class="text-3xl font-bold">BridgBeat App</h3>
 					<img src="./assets/bridgebeat-screenshot.png" alt="screenshot of the main interface for BridgeBeat" title="screenshot of the main interface for BridgeBeat" class="w-full mb-4 rounded">
 					<div class="flex flex-wrap gap-2">
@@ -118,7 +121,7 @@
 					<p>Playlist Management on Spotify, Made Easy. Bridgebeat allows the user to create playlists, add or remove tracks from playlists, edit track order, playlist details and more. It's interface is build to showcase relevant Spotify data and allow the user to easily manage that data. The app has ambitious goals to become a central zone for managing a user's musical story across all major platforms. It is currently in Private Alpha, but screenshots and more on it's inner workings can be found by clicking below.</p>
 					<button id="openModalBtn" class="button w-fit hover:bg-green-600" href="#">Project Insights</button>
 				</div>
-				<div class="card flex flex-col gap-2 p-4 rounded border transition duration-300 hover:rotate-2" data-bg="bg-purple-950" data-circle-color="bg-yellow-500" data-sibling-color="bg-yellow-500">
+				<div class="card flex flex-col gap-2 p-4 rounded border transition duration-300 hover:rotate-2 hover:bg-yellow-600" data-bg="bg-purple-950" data-circle-color="bg-yellow-500" data-sibling-color="bg-yellow-500">
 					<h3 class="text-3xl font-bold">Gondola SSG</h3>
 					<!-- <img src="https://via.placeholder.com/800x400" alt="Blog Image" class="w-full mb-4 rounded"> -->
 					<div class="flex flex-wrap gap-2">
@@ -135,7 +138,7 @@
 					<p>Gondola is a simple Static Site Generator and Progressive Web App (PWA) builder focused on a streamlined developer experience. Gondola aims to help developers have fun creating websites again. JavaScript has come a long way, so Gondola uses JavaScript template literals and other features as a templating language. It also allows for Markdown, YAML front matter, and the use of JSON for data. It works with collections, has a plugin system and is very quick.</p>
 					<a class="button w-fit hover:bg-yellow-500" href="https://github.com/oofytronic/gondola" target="_blank" rel="noopener noreferrer">Github</a>
 				</div>
-				<div class="card flex flex-col gap-2 p-4 rounded border transition duration-300 hover:rotate-2" data-bg="bg-blue-700" data-circle-color="bg-orange-200" data-sibling-color="bg-sky-500">
+				<div class="card flex flex-col gap-2 p-4 rounded border transition duration-300 hover:rotate-2 bg-ar" data-bg="bg-blue-700" data-circle-color="bg-orange-200" data-sibling-color="bg-sky-500">
 					<h3 class="text-3xl font-bold">Artist Retreats Workshop Platform</h3>
 					<img src="./assets/ar-screenshot.png" alt="Artist Retreats Workshop Page Screenshot" title="Workshop Page for the Artist Retreats website" class="w-full mb-4 rounded">
 					<div class="flex flex-wrap gap-2">
@@ -161,7 +164,7 @@
 					<p>Artist Retreats is an artist workshop booking platform for workshops in Sicily, Italy. The platform has a custom booking experience, connects with the Stripe API to offer a custom checkout, is tailored to the user's decisions during checkout and is packed with small, tasteful interactions. It is a website with a clear design system and comes with a custom CMS tailored to the way the team at Artist Retreats thinks about data. UPDATE: the CEO has since abandoned the project, but I have kept a copy of it for display purposes only.</p>
 					<a class="button w-fit hover:bg-sky-500" href="https://ar-og.netlify.app" target="_blank" rel="noopener noreferrer">Visit</a>
 				</div>
-				<div class="card flex flex-col gap-2 p-4 rounded border transition duration-300 hover:rotate-2" data-bg="bg-emerald-950" data-circle-color="bg-stone-50" data-sibling-color="bg-yellow-600">
+				<div class="card flex flex-col gap-2 p-4 rounded border transition duration-300 hover:rotate-2 hover:bg-neutral-400" data-bg="bg-emerald-950" data-circle-color="bg-stone-50" data-sibling-color="bg-yellow-600">
 					<h3 class="text-3xl font-bold">3Peak Coaching & Solutions Website</h3>
 					<img src="./assets/3peak-screenshot.png" alt="Screenshot of Podcast page for 3Peak" title="Screenshot of Podcast page for 3Peak" class="w-full mb-4 rounded">
 					<div class="flex flex-wrap gap-2">
@@ -184,7 +187,7 @@
 					<p>3Peak Coaching & Solutions is a company offering expert crisis management services to businesses. The team needed a website that was able to function as a display for their services, a blog to showcase their expertise, a podcast platform that allows users to listen to their podcasts and find the podcasts on various channels, and an event recollection feed. The website uses custom integrations to track when the team uploads a new podcast to their podcast platform and then triggers a new build using the JSON data from the podcast platform to display the new podcast on the site. The website also comes fitted with a custom CMS.</p>
 					<a class="button w-fit hover:bg-yellow-600" href="https://3peakcoaching.com" target="_blank" rel="noopener noreferrer">Visit</a>
 				</div>
-				<div class="card flex flex-col gap-2 p-4 rounded border transition duration-300 hover:rotate-2" data-bg="bg-black" data-circle-color="bg-blue-600" data-sibling-color="bg-blue-600">
+				<div class="card flex flex-col gap-2 p-4 rounded border transition duration-300 hover:rotate-2 hover:bg-red-800" data-bg="bg-black" data-circle-color="bg-blue-600" data-sibling-color="bg-blue-600">
 					<h3 class="text-3xl font-bold">Valiant Fight</h3>
 					<!-- <img src="https://via.placeholder.com/800x400" alt="Blog Image" class="w-full mb-4 rounded"> -->
 					<div class="flex flex-wrap gap-2">
@@ -317,39 +320,39 @@
 	</div>
 
 	<dialog id="myModal" class="fixed inset-0 bg-white p-8 max-w-3xl w-full rounded shadow-lg">
-    <div class="flex justify-end">
-      <button id="closeModalBtn" class="text-gray-500 hover:text-gray-700 text-xl font-bold">&times;</button>
-    </div>
-    <div class="flex flex-col gap-8">
-	    <h2 class="text-2xl font-semibold mb-4">BridgeBeat App</h2>
-	    <img src="/assets/bb-entry-screenshot.png" alt="Screenshot of BridgeBeat entry screen" class="w-full mb-4 rounded">
-	    <p>The BridgeBeat app is an app purely dedicated to playlist management. It is currently in Private Alpha and requires name, email and approval to use. It simplifies the visual aspect of managing songs and playlist information. The entry screen is simple. The user signs in with their Spotify account which connects the user with the BridgeBeat Spotify integration. Once the user accepts the React app populates the screen with the empty interface.</p>
-	    <img src="/assets/bb-list-screenshot.png" alt="Screenshot of BridgeBeat entry screen" class="w-full mb-4 rounded">
-	    <p>When a user clicks on Playlists in the top right corner, a request is sent to the Spotify API for the users playlists and React updates the list area. Playlist arrive in the same order they are organized in Spotify. In the future the app will allow users to rearrange the order of playlists and place them in buckets.</p>
-	    <img src="/assets/bb-playlist-screenshot.png" alt="Screenshot of BridgeBeat entry screen" class="w-full mb-4 rounded">
-	    <p>When a user clicks on a playlist the center area showcases the playlist details like the title and list of tracks. If the playlist is owned by the user other controls are made available. If the user is owned by Spotify or another user the playlist is effectively in "view-only" mode.</p>
-	    <img src="/assets/bb-search-screenshot.png" alt="Screenshot of BridgeBeat entry screen" class="w-full mb-4 rounded">
-	    <p>A user can also search for songs to add to an active playlist. If their is no active playlist the user is prompted to choose a playlist before adding a song. Songs are added to the bottom of a playlist. In the future, users will be able to rearrange tracks.</p>
-	    <p>BridgeBeat has ambitious goals and intends to wrangle APIs from various streaming services and allow users to manage their playlists and account information from one location.</p>
-	  </div>
-  </dialog>
+		<div class="flex justify-end">
+		  <button id="closeModalBtn" class="text-gray-500 hover:text-gray-700 text-xl font-bold">&times;</button>
+		</div>
+		<div class="flex flex-col gap-8">
+		    <h2 class="text-2xl font-semibold mb-4">BridgeBeat App</h2>
+		    <img src="/assets/bb-entry-screenshot.png" alt="Screenshot of BridgeBeat entry screen" class="w-full mb-4 rounded">
+		    <p>The BridgeBeat app is an app purely dedicated to playlist management. It is currently in Private Alpha and requires name, email and approval to use. It simplifies the visual aspect of managing songs and playlist information. The entry screen is simple. The user signs in with their Spotify account which connects the user with the BridgeBeat Spotify integration. Once the user accepts the React app populates the screen with the empty interface.</p>
+		    <img src="/assets/bb-list-screenshot.png" alt="Screenshot of BridgeBeat entry screen" class="w-full mb-4 rounded">
+		    <p>When a user clicks on Playlists in the top right corner, a request is sent to the Spotify API for the users playlists and React updates the list area. Playlist arrive in the same order they are organized in Spotify. In the future the app will allow users to rearrange the order of playlists and place them in buckets.</p>
+		    <img src="/assets/bb-playlist-screenshot.png" alt="Screenshot of BridgeBeat entry screen" class="w-full mb-4 rounded">
+		    <p>When a user clicks on a playlist the center area showcases the playlist details like the title and list of tracks. If the playlist is owned by the user other controls are made available. If the user is owned by Spotify or another user the playlist is effectively in "view-only" mode.</p>
+		    <img src="/assets/bb-search-screenshot.png" alt="Screenshot of BridgeBeat entry screen" class="w-full mb-4 rounded">
+		    <p>A user can also search for songs to add to an active playlist. If their is no active playlist the user is prompted to choose a playlist before adding a song. Songs are added to the bottom of a playlist. In the future, users will be able to rearrange tracks.</p>
+		    <p>BridgeBeat has ambitious goals and intends to wrangle APIs from various streaming services and allow users to manage their playlists and account information from one location.</p>
+		</div>
+	</dialog>
 
-  <script>
-    document.getElementById('openModalBtn').addEventListener('click', () => {
-      document.getElementById('myModal').showModal();
-    });
+	<script>
+	document.getElementById('openModalBtn').addEventListener('click', () => {
+	  document.getElementById('myModal').showModal();
+	});
 
-    document.getElementById('closeModalBtn').addEventListener('click', () => {
-      document.getElementById('myModal').close();
-    });
+	document.getElementById('closeModalBtn').addEventListener('click', () => {
+	  document.getElementById('myModal').close();
+	});
 
-    // Close the modal when clicking outside of it
-    document.getElementById('myModal').addEventListener('click', (event) => {
-      if (event.target === document.getElementById('myModal')) {
-        document.getElementById('myModal').close();
-      }
-    });
-  </script>
+	// Close the modal when clicking outside of it
+	document.getElementById('myModal').addEventListener('click', (event) => {
+	  if (event.target === document.getElementById('myModal')) {
+	    document.getElementById('myModal').close();
+	  }
+	});
+	</script>
 
 	<script>
 		const latestButton = document.querySelector('#latest-button');
@@ -379,6 +382,7 @@
 	        const siblingColor = card.getAttribute('data-sibling-color');
 
 	      card.addEventListener('mouseenter', () => {
+	      	document.body.classList.remove('bg-gray-900');
 	        document.body.classList.add(bgColor);
 	        card.classList.add(bgColor);
 
@@ -394,6 +398,7 @@
 	      });
 
 	      card.addEventListener('mouseleave', () => {
+	      	document.body.classList.add('bg-gray-900')
 	        document.body.classList.remove(bgColor);
 	        card.classList.remove(bgColor);
 
