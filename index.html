@@ -413,7 +413,6 @@
 			]
 
 			const markup = modalData.find(data => modalDataId === data.id);
-			console.log(markup)
 			document.querySelector('.modal-body').innerHTML = markup.contents;
 			document.getElementById('myModal').showModal();
 		}
