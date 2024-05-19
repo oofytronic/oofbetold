@@ -19,6 +19,38 @@
     .lg\\:w-70ch {
     	width: 70ch;
     }
+    .bg-ar:hover {
+    	background: #e3ba96;
+    }
+    /* Webkit browsers (Chrome, Safari) */
+    ::-webkit-scrollbar {
+      width: 12px; /* Width of the scrollbar */
+      height: 12px; /* Height of the scrollbar (for horizontal scrollbars) */
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #2d3748; /* bg-gray-800 */
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #ffffff; /* bg-white */
+      border-radius: 10px; /* Make it a pill shape */
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #e2e8f0; /* Slightly darker white on hover */
+    }
+
+    /* Firefox */
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: #ffffff #2d3748; /* thumb color track color */
+    }
+
+    /* Edge, IE */
+    body {
+      -ms-overflow-style: -ms-autohiding-scrollbar; /* Edge and IE scrollbar hiding */
+    }
   </style>
 </head>
 <body class="flex flex-col items-center bg-gray-900 text-white transition-colors duration-300">

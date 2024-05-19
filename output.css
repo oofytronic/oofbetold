@@ -2890,9 +2890,9 @@ button:hover, .button:hover {
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-orange-200:hover {
+.hover\:bg-neutral-400:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(254 215 170 / var(--tw-bg-opacity));
+  background-color: rgb(163 163 163 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-red-800:hover {
@@ -2910,11 +2910,6 @@ button:hover, .button:hover {
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-stone-50:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 250 249 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -2928,11 +2923,6 @@ button:hover, .button:hover {
 .hover\:bg-yellow-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(202 138 4 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-neutral-400:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(163 163 163 / var(--tw-bg-opacity));
 }
 
 .hover\:font-bold:hover {
