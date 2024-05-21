@@ -1176,11 +1176,6 @@ video {
           appearance: auto;
 }
 
-.columns-2 {
-  -moz-columns: 2;
-       columns: 2;
-}
-
 .break-before-auto {
   -moz-column-break-before: auto;
        break-before: auto;
@@ -1298,10 +1293,6 @@ video {
 
 .grid-flow-col-dense {
   grid-auto-flow: column dense;
-}
-
-.auto-rows-auto {
-  grid-auto-rows: auto;
 }
 
 .flex-row {
