@@ -52,13 +52,13 @@
     }
   </style>
 </head>
-<body class="flex flex-col items-center bg-gray-900 text-white transition-colors duration-300">
-	<nav class="sticky top-0 left-0 flex flex-wrap justify-between gap-8 w-full lg:max-w-4xl bg-gray-900 border border-white border-t-0 p-4 rounded-b-lg z-50">
+<body class="flex flex-col items-center bg-slate-950 text-white transition-colors duration-300">
+	<nav class="sticky top-0 left-0 flex flex-wrap justify-between gap-8 w-full lg:max-w-4xl bg-slate-950 border border-white border-t-0 p-4 rounded-b-lg z-50">
 		<div class="flex gap-2">
 			<a href="/"><img class="w-6" src="/assets/oof-icon.svg" alt=""></a>
 			<a href="/"><p class="font-bold">Raouf (Oof) Sattaur</p></a>
 		</div>
-		<div class="flex gap-8">
+		<div class="flex gap-4 lg:gap-8">
 			<ul class="flex gap-2">
 				<li><a class="hover:text-blue-500 transition" href="/#latest-work">Work</a></li>
 				<li><a class="hover:text-blue-500 transition" href="/#thoughts">Thoughts</a></li>
@@ -134,7 +134,7 @@
 			<h2 class="text-4xl font-bold">Latest Work</h2>
 			<div class="card-area lg:columns-2 gap-4 py-4">
 				<!-- BridgeBeat -->
-				<div class="card block break-inside-avoid lg:order-1 h-fit p-4 mb-4 rounded border transition duration-300 hover:rotate-2 hover:bg-slate-800" data-bg="bg-slate-950" data-circle-color="bg-slate-800" data-sibling-color="bg-green-600">
+				<div class="card block break-inside-avoid lg:order-1 h-fit p-4 mb-4 rounded border transition duration-300 hover:rotate-2 hover:bg-slate-800" data-bg="bg-slate-900" data-circle-color="bg-green-800" data-sibling-color="bg-green-600">
 					<div class="flex flex-col gap-2">
 						<h3 class="text-3xl font-bold">BridgeBeat App</h3>
 						<img src="./assets/bridgebeat-screenshot.png" alt="screenshot of the main interface for BridgeBeat" title="screenshot of the main interface for BridgeBeat" class="w-full mb-4 rounded">
@@ -183,7 +183,7 @@
 					</div>
 				</div>
 				<!-- Gondola -->
-				<div class="card block break-inside-avoid lg:order-5 h-fit p-4 mb-4 rounded border transition duration-300 hover:rotate-2 hover:bg-yellow-600" data-bg="bg-purple-950" data-circle-color="bg-yellow-500" data-sibling-color="bg-yellow-500">
+				<div class="card block break-inside-avoid lg:order-5 h-fit p-4 mb-4 rounded border transition duration-300 hover:rotate-2 hover:bg-yellow-700" data-bg="bg-purple-950" data-circle-color="bg-yellow-600" data-sibling-color="bg-yellow-500">
 					<div class="flex flex-col gap-2">
 						<h3 class="text-3xl font-bold">Gondola SSG</h3>
 						<!-- <img src="https://via.placeholder.com/800x400" alt="Blog Image" class="w-full mb-4 rounded"> -->
@@ -352,12 +352,12 @@
 		<section id="thoughts">
 			<h2 class="text-4xl font-bold">Thoughts</h2>
 			<div class="grid grid-wrap lg:grid-cols-2 gap-4 py-4">
-				<div class="card flex flex-col gap-2 p-4 rounded border hover:bg-white hover:text-gray-900" data-bg="bg-gray-800" data-circle-color="bg-stone-50" data-sibling-color="bg-gray-800">
+				<div class="card flex flex-col gap-2 p-4 rounded border hover:bg-white hover:text-slate-800" data-bg="bg-slate-800" data-circle-color="bg-stone-50" data-sibling-color="bg-slate-800">
 					<h3 class="text-3xl font-bold">The Future is an Installable Web</h3>
 					<p>What if you have a website and want to create an app like the ones you have installed on your device, but don't have the time or resources to create dedicated apps that will run on iOS, Windows, Android and Linux devices? After all, you website isn't complex, you just want to be able to offer the users of your web store or web blog features like notifications when you create a new blog post, website access from their home screen or the ability to view your content offline.</p>
 					<a class="button w-fit transition" href="/thoughts/the-future-is-an-installable-web">Read More</a>
 				</div>
-				<div class="card flex flex-col gap-2 p-4 rounded border hover:bg-white hover:text-gray-900" data-bg="bg-gray-800" data-circle-color="bg-stone-50" data-sibling-color="bg-gray-800">
+				<div class="card flex flex-col gap-2 p-4 rounded border hover:bg-white hover:text-slate-800" data-bg="bg-slate-800" data-circle-color="bg-stone-50" data-sibling-color="bg-slate-800">
 					<h3 class="text-3xl font-bold">5 Reasons Why You Need RSS</h3>
 					<p>RSS is a web feed format that allows content creators to syndicate their content as feeds, updating subscribers when new items are added. Subscribers use feed reading applications to track which websites they've subscribed to, and new items from these feeds are presented in a unified space for easy browsing. Introduced in 1999, RSS became the first widely adopted content subscription mechanism on the World Wide Web.</p>
 					<a class="button w-fit transition" href="/thoughts/5-reasons-why-you-need-rss">Read More</a>
@@ -500,7 +500,7 @@
 	        const siblingColor = card.getAttribute('data-sibling-color');
 
 	      card.addEventListener('mouseenter', () => {
-	      	document.body.classList.remove('bg-gray-900');
+	      	document.body.classList.remove('bg-slate-950');
 	        document.body.classList.add(bgColor);
 	        card.classList.add(bgColor);
 
@@ -516,7 +516,7 @@
 	      });
 
 	      card.addEventListener('mouseleave', () => {
-	      	document.body.classList.add('bg-gray-900')
+	      	document.body.classList.add('bg-slate-950')
 	        document.body.classList.remove(bgColor);
 	        card.classList.remove(bgColor);
 
